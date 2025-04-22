@@ -1,34 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { Sun, Moon, LogOut } from "lucide-react";
+import React, { useState, useContext } from "react";
+import { Sun, Moon, UserCircle2, LogOut } from "lucide-react";
 import AdminHome from "./AdminHome";
 import AdminTasks from "./AdminTasks";
 import VideoChat from "./AdminVideoChat";
+import { useAuth } from "../context/AuthContext";
 
 const AdminDashboard = () => {
   const [activeView, setActiveView] = useState("home");
-  const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem("darkMode") === "true";
-  });
-
-  useEffect(() => {
-    const root = document.documentElement;
-    if (darkMode) {
-      root.classList.add("dark");
-    } else {
-      root.classList.remove("dark");
-    }
-    localStorage.setItem("darkMode", darkMode);
-  }, [darkMode]);
-
-  const toggleDarkMode = () => {
-    setDarkMode((prev) => !prev);
-  };
-
-  const handleLogout = () => {
-    // You can clear any auth token or session logic here
-    alert("You have been logged out.");
-    window.location.href = "/"; // redirect to login or home page
-  };
+  const { logout } = useAuth();
 
   const renderView = () => {
     switch (activeView) {
@@ -49,51 +28,62 @@ const AdminDashboard = () => {
       <div className="w-64 bg-white dark:bg-gray-800 p-4 shadow-lg flex flex-col justify-between">
         <div>
           {/* Profile */}
-          <div className="mb-6">
-            <h2 className="text-xl font-bold">Admin Panel</h2>
-            <p className="text-sm mt-1 text-gray-600 dark:text-gray-300">Amrutha MT</p>
+          <div className="flex items-center space-x-3 mb-6">
+            <div className="bg-gradient-to-br from-blue-500 to-purple-500 text-white p-3 rounded-full shadow-md">
+              <UserCircle2 size={28} />
+            </div>
+            <div>
+              <p className="text-sm text-gray-400 dark:text-gray-300">Welcome</p>
+              <h3 className="text-lg font-semibold text-gray-800 dark:text-white">Amrutha MT</h3>
+            </div>
           </div>
 
-          {/* Nav Buttons */}
+          {/* Admin Panel Title */}
+          <h2 className="text-xl font-bold mb-4 text-gray-800 dark:text-white">Admin Panel</h2>
+
+          {/* Navigation */}
           <ul className="space-y-3">
             <li>
-              <button onClick={() => setActiveView("home")} className="w-full text-left hover:underline">
+              <button
+                onClick={() => setActiveView("home")}
+                className="w-full text-left hover:text-blue-500 dark:hover:text-blue-400"
+              >
                 Home
               </button>
             </li>
             <li>
-              <button onClick={() => setActiveView("tasks")} className="w-full text-left hover:underline">
+              <button
+                onClick={() => setActiveView("tasks")}
+                className="w-full text-left hover:text-blue-500 dark:hover:text-blue-400"
+              >
                 Tasks
               </button>
             </li>
             <li>
-              <button onClick={() => setActiveView("video")} className="w-full text-left hover:underline">
+              <button
+                onClick={() => setActiveView("video")}
+                className="w-full text-left hover:text-blue-500 dark:hover:text-blue-400"
+              >
                 Video Chat
               </button>
             </li>
           </ul>
         </div>
 
-        {/* Footer */}
-        <div className="mt-10 flex justify-between items-center">
-          <button
-            onClick={toggleDarkMode}
-            className="bg-gray-200 dark:bg-gray-700 p-2 rounded-full"
-          >
-            {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-          </button>
+        {/* Bottom Buttons */}
+        <div className="space-y-4">
 
+         {/* Logout */}
           <button
-            onClick={handleLogout}
-            className="text-red-500 hover:underline flex items-center gap-1"
+            onClick={logout}
+            className="bg-red-500 hover:bg-red-600 text-white py-2 rounded-lg flex items-center justify-center w-full"
           >
-            <LogOut size={16} />
-            Logout
+            <LogOut size={18} className="mr-2" /> Logout
           </button>
         </div>
       </div>
 
-      {/* Main View */}
+      {/* Main Content */}
       <div className="flex-1 overflow-auto p-6">{renderView()}</div>
     </div>
   );

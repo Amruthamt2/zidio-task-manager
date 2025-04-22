@@ -5,7 +5,6 @@ import AdminDashboard from "./pages/AdminDashboard";
 import AdminVideoChat from "./pages/AdminVideoChat";
 
 import UserHome from "./pages/UserHome";
-import UserTask from "./pages/UserTasks";
 import UserVideoChat from "./pages/UserVideoChat";
 
 import { useAuth } from "./context/AuthContext";
@@ -31,8 +30,7 @@ const App = () => {
         {/* User Routes */}
         {auth.user?.role === "user" && (
           <>
-            <Route path="/user" element={<UserHome />} />
-            <Route path="/user/tasks" element={<UserTask />} />
+            <Route path="/user/home" element={<UserHome />} />
             <Route path="/user/video-chat" element={<UserVideoChat />} />
           </>
         )}
