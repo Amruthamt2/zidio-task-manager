@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { io } from "socket.io-client";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-import UserVideoChat from "./UserVideoChat";
+import UserVideoChat from "./UserMeetings";
 import { useAuth } from "../context/AuthContext";
 
 // -------- socket.io ----------

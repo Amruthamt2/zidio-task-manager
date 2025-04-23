@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { Sun, Moon, UserCircle2, LogOut } from "lucide-react";
 import AdminHome from "./AdminHome";
 import AdminTasks from "./AdminTasks";
-import VideoChat from "./AdminVideoChat";
+import VideoChat from "./AdminMeetingForm";
 import { useAuth } from "../context/AuthContext";
 
 const AdminDashboard = () => {

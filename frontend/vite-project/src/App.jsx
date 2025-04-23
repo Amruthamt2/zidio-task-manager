@@ -2,10 +2,12 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import SignupPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
 import AdminDashboard from "./pages/AdminDashboard";
-import AdminVideoChat from "./pages/AdminVideoChat";
+import AdminMeetingForm from "./pages/AdminMeetingForm";
 
 import UserHome from "./pages/UserHome";
-import UserVideoChat from "./pages/UserVideoChat";
+import UserMeetings from "./pages/UserMeetings";
+
+import VideoCall from "./pages/VideoCall";
 
 import { useAuth } from "./context/AuthContext";
 
@@ -23,7 +25,7 @@ const App = () => {
         {auth.user?.role === "admin" && (
           <>
             <Route path="/admin" element={<AdminDashboard />} />
-            <Route path="/admin/video-chat" element={<AdminVideoChat />} />
+            <Route path="/admin/video-chat" element={<AdminMeetingForm />} />
           </>
         )}
 
@@ -31,9 +33,11 @@ const App = () => {
         {auth.user?.role === "user" && (
           <>
             <Route path="/user/home" element={<UserHome />} />
-            <Route path="/user/video-chat" element={<UserVideoChat />} />
+            <Route path="/user/video-chat" element={<UserMeetings/>} />
           </>
         )}
+        {/* Shared Route:Jitsi Video Meeting */}
+        <Route path="/video/:roomId" element={<VideoCall/>} />
       </Routes>
     </Router>
   );
