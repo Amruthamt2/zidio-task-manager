@@ -38,24 +38,25 @@ To design and develop a responsive, feature-rich Task Management Web Application
 ## 4. Screenshots of the Project
 
 Signup Page:  
-![SignupPage](/signup page.png)
+![SignupPage] (<frontend/vite-project/public/signup page.png>)
 
 Login Page:  
-![LoginPage](/login page.png)
+![LoginPage] (<frontend/vite-project/public/login page.png>)
 
 Admin Dashboard:  
-![AdminDashboard](/AdminDashboard.png)
+![AdminDashboard] (<frontend/vite-project/public/AdminDashboard.png>)
 
 Task Assignment Screen:  
-![TaskCreation](/Taskcreation.png)
+![TaskCreation] (frontend/vite-project/public/Taskcreation.png)
 
 User Dashboard:  
-![UserDashboard](/UserDashboard.png)
+![UserDashboard] (frontend/vite-project/public/UserDashboard.png)
 
 User Meeting request screen:
-![Usermeetingrequest](/usermeetingrequest.png)
+![Usermeetingrequest] (frontend/vite-project/public/usermeetingrequest.png)
 
-[Meetingscreen](/meetingscreen.png)
+meeting screen
+![Meetingscreen] (frontend/vite-project/public/meetingscreen.png)
 
 
 
