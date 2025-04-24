@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base:"zidio-task-manager",
+  //base:"/zidio-task-manager/",
   plugins: [react()],
 })

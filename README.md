@@ -35,8 +35,31 @@ To design and develop a responsive, feature-rich Task Management Web Application
 - Deadline notification today task alert(Real time)
 
 ---
+## 4. Screenshots of the Project
 
-## 4. Modules Breakdown
+Signup Page:  
+![SignupPage](/signup page.png)
+
+Login Page:  
+![LoginPage](/login page.png)
+
+Admin Dashboard:  
+![AdminDashboard](/AdminDashboard.png)
+
+Task Assignment Screen:  
+![TaskCreation](/Taskcreation.png)
+
+User Dashboard:  
+![UserDashboard](/UserDashboard.png)
+
+User Meeting request screen:
+![Usermeetingrequest](/usermeetingrequest.png)
+
+[Meetingscreen](/meetingscreen.png)
+
+
+
+## 5. Modules Breakdown
 
 ### Authentication
 - Role-based login (Admin, User)  
@@ -56,7 +79,7 @@ To design and develop a responsive, feature-rich Task Management Web Application
 
 ---
 
-## 5. Project Folder Structure
+## 6. Project Folder Structure
 
 ```bash
 *Frontend (client/vite-project):*
@@ -127,7 +150,7 @@ To design and develop a responsive, feature-rich Task Management Web Application
 -
 ---
 
-6. Setup Instructions
+## 7 . Setup Instructions
 
 Backend
 
@@ -155,7 +178,7 @@ npm run dev
 
 ---
 
-7. Jitsi Integration
+## 8 . Jitsi Integration
 
 Uses @jitsi/react-sdk to embed secure video calls
 
@@ -165,7 +188,7 @@ Admin creates meeting → stored in DB → users join via embedded iFrame
 
 ---
 
-8. Future Enhancements
+## 9. Future Enhancements
 
 Task comments and file uploads
 
@@ -177,7 +200,7 @@ Attendance tracking via video
 
 ---
 
-9. Learnings
+## 10. Learnings
 
 Full MERN stack experience
 
@@ -195,10 +218,10 @@ State management in React
 
 ---
 
-10. Credits
+##11 . Credits
 
 Developed by: Amrutha M T
-Internship: Zidio Company
+Internship: Zidio Development Company
 
 
 ---
