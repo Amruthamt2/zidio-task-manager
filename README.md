@@ -34,33 +34,11 @@ To design and develop a responsive, feature-rich Task Management Web Application
 - View and join scheduled meetings  
 - Deadline notification today task alert(Real time)
 
----
-## 4. Screenshots of the Project
-
-Signup Page:  
-![SignupPage] (<frontend/vite-project/public/signup page.png>)
-
-Login Page:  
-![LoginPage] (<frontend/vite-project/public/login page.png>)
-
-Admin Dashboard:  
-![AdminDashboard] (<frontend/vite-project/public/AdminDashboard.png>)
-
-Task Assignment Screen:  
-![TaskCreation] (frontend/vite-project/public/Taskcreation.png)
-
-User Dashboard:  
-![UserDashboard] (frontend/vite-project/public/UserDashboard.png)
-
-User Meeting request screen:
-![Usermeetingrequest] (frontend/vite-project/public/usermeetingrequest.png)
-
-meeting screen
-![Meetingscreen] (frontend/vite-project/public/meetingscreen.png)
 
 
 
-## 5. Modules Breakdown
+
+## 4. Modules Breakdown
 
 ### Authentication
 - Role-based login (Admin, User)  
@@ -80,7 +58,7 @@ meeting screen
 
 ---
 
-## 6. Project Folder Structure
+## 5. Project Folder Structure
 
 ```bash
 *Frontend (client/vite-project):*
@@ -151,7 +129,7 @@ meeting screen
 -
 ---
 
-## 7 . Setup Instructions
+## 6. Setup Instructions
 
 Backend
 
@@ -179,7 +157,7 @@ npm run dev
 
 ---
 
-## 8 . Jitsi Integration
+## 7. Jitsi Integration
 
 Uses @jitsi/react-sdk to embed secure video calls
 
@@ -189,7 +167,7 @@ Admin creates meeting → stored in DB → users join via embedded iFrame
 
 ---
 
-## 9. Future Enhancements
+## 8. Future Enhancements
 
 Task comments and file uploads
 
@@ -201,7 +179,7 @@ Attendance tracking via video
 
 ---
 
-## 10. Learnings
+## 9. Learnings
 
 Full MERN stack experience
 
@@ -219,7 +197,7 @@ State management in React
 
 ---
 
-##11 . Credits
+##10 . Credits
 
 Developed by: Amrutha M T
 Internship: Zidio Development Company
