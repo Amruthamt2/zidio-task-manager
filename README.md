@@ -13,7 +13,6 @@ To design and develop a responsive, feature-rich Task Management Web Application
 - Authentication: JWT with cookies  
 - Video Integration: Jitsi Meet API  
 -  Real-Time Features: Socket.io   
-
 ---
 
 ## 3. Features
