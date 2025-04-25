@@ -41,7 +41,7 @@ const AdminHome = () => {
         const statusCount = {
           Completed: 0,
           Pending: 0,
-          "In Progress": 0,
+          Ongoing: 0,
         };
 
         // Count priorities
